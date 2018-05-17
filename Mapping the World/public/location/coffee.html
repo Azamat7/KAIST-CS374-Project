@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Cafes</title>
+
+    <style>
+        body {background-color: white; font-family: Roboto; }
+        .navbar {font-size: 12px;}
+    </style>
+</head>
+<body>
+  <nav class = "navbar navbar-expand sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Navbar</a>
+    <ul class="navbar-nav  mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../amenities/amenities.html">Amenities</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="../events/events.html">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../event-create/event-create.html">Create Events</a>
+      </li>
+    </ul>
+    <ul class = "navbar-nav">
+      <li class = "nav-item active">
+          <a class="nav-link" href="#"><i class ="far fa-map" style = "font-size: 18px;"></i></a>
+      </li>
+    </ul>
+    </nav>
+  <div class = "jumbotron jumbotron-fluid">
+    <div class = "col-10 offset-1 px-0 mb-5 d-inline-flex justify-content-around">
+      <a class = "back" href = "../amenities/amenities.html"><button class = "btn btn-outline-primary"> <i class="fas fa-arrow-left"></i> Back</button> </a>
+      <div class = "lead" style = "padding-top: 6px;">Cafes <i class="fas fa-coffee"></i> </div>
+      <a class = "about" href = "#"><button class = "btn btn-outline-primary"> <i class="fas fa-question-circle"></i> About </button> </a>
+    </div>
+    <div class = "input-group col-10 offset-1 mb-5 px-0">
+      <input class = "form-control" type="text" placeholder="Search for Cafes" id="searchBuilding">
+      <div class = "input-group-append">
+        <button class="btn btn-primary" type="submit" id=searchBuildingButton><i class="fa fa-search"></i></button>
+      </div>  
+    </div>
+    <div class = "card-group col-10 offset-1 px-0">
+      <div class="card" >
+        <img class="card-img-top" src="../images/gran.jpg" alt="Card image cap" >
+        <div class="card-body">
+          <h5 class="card-title">Cafe "Gran"</h5>
+          <p class="card-text">
+            5 meters away<br>
+            Open: 10AM<br>
+            Close: 8PM<br>
+          </p>
+          <a href="#" class="btn btn-outline-success">Locate in MAP</a>
+        </div>
+      </div>
+      <div class="card" >
+        <img class="card-img-top" src="../images/starbucks.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Twosome Place</h5>
+          <p class="card-text">
+            10 meters away<br>
+            Open: 9AM<br>
+            Close: 11PM<br>
+          </p>
+          <a href="#" class="btn btn-outline-success">Locate in MAP</a>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/twosome.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Starbucks</h5>
+          <p class="card-text">
+            20 meters away<br>
+            Open: 9AM<br>
+            Close: 10PM<br>
+          </p>
+          <a href="#" class="btn btn-outline-success">Locate in MAP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>

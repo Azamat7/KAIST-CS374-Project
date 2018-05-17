@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Title page</title>
+  </head>
+  <style>
+    body {background-color: #e9ecef;}
+    .navbar {font-size: 12px;}
+
+  </style>
+  <body>
+    <nav class = "navbar navbar-expand sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Navbar</a>
+      <ul class="navbar-nav  mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./amenities/amenities.html">Amenities</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="./events/events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./event-create/event-create.html">Create Events</a>
+        </li>
+      </ul>
+      <ul class = "navbar-nav">
+        <li class = "nav-item active">
+            <a class="nav-link" href="#"><i class ="far fa-map" style = "font-size: 18px;"></i></a>
+        </li>
+      </ul>
+      </nav>
+    <div class = "jumbotron jumbotron-fluid">
+      <h3 class = "text-center display-4" style = "font-size: 30px;">
+        Welcome to <br>
+        Mapping the World!
+      </h3>
+      <p class= "lead text-center">
+        Find your desired location, INDOORS.
+      </p>
+      <hr class = "my-3">
+      <p class = "text-center my-3">Please tell us your current location:</p>
+      <div class = "input-group col-10 offset-1 mb-5 px-0">
+        <input class = "form-control" type="text" placeholder="Current Building(i.e N1 Building, E3-2 building)" id="searchBuilding">
+        <div class = "input-group-append">
+          <button class="btn btn-outline-primary" type="submit" id=searchBuildingButton><i class="fa fa-search"></i></button>
+        </div>  
+      </div>
+      <div class = "text-center my-5">
+        OR
+      </div>
+      <div class = "d-flex justfiy-content-center text-center mb-5" style="text-align:center">
+        <a class = "col-10 offset-1 btn btn-outline-info" href = "amenities/amenities.html" role = "button">Take picture of QR Code</a>
+      </div>
+      <div class = "col-11 px-0 d-flex flex-row-reverse">
+        <div class = "mx-0"><i style = "color: #3276b1; font-size: 1.5em;" class="fa fa-question-circle"></i></div>  
+      </div>
+    </div> <!-- end of jumbotron-->
+  </body>
+</html>
+ 

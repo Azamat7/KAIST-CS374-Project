@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { font-family: Roboto; }
+h3 {font-family: "Segoe UI" !important;}
+.navbar {font-size: 12px;}
+label:after {	content: " *";
+                      color: red;
+                      vertical-align: super;
+                      font-size: smaller;}
+.btn:hover {
+  color: white;
+}
