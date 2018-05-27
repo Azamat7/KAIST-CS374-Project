@@ -20,7 +20,7 @@ $(document).ready(function(){
         '<div class = "d-flex justify-content-between">' +
           '<span>' + eventObject["time"] + '</span> <span>' + eventObject["location"] + ' </span> ' +
         '</div>' + 
-        '<a class = "mt-3 btn btn-outline-info" href = "#" style = "font-size: 12px;"> Find in Map </a>'
+        '<a class = "mt-3 btn btn-outline-info" href = "../map/map1.html" style = "font-size: 12px;"> Find in Map </a>'
       '</div>';
       $("#list-group-append").append(html);
     }
