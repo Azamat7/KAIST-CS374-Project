@@ -25,8 +25,8 @@
 
   border: 6px solid #17a2b8; 
   padding: 20px;
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 80%;
   text-align: center;
   background: #fff;
   position: fixed;
@@ -36,7 +36,7 @@
   -webkit-transform: translate(-50%,-50%);
   z-index: 10;
   /*margin-top: 1em;*/
-  font-size:2vh;
+  font-size:1.8vh;
 }
 
 
