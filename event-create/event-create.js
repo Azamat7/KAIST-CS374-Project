@@ -4,6 +4,7 @@ $(document).ready(function() {
   $(document).on('click', '#building',function(){
     document.getElementById("buildingButton").innerHTML = "N1";
     building = "N1";
+    event.preventDefault();
   });
 
   $(document).on('click', '#room1',function(){
