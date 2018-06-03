@@ -10,18 +10,22 @@ $(document).ready(function() {
   $(document).on('click', '#room1',function(){
     document.getElementById("roomButton").innerHTML = "Seminar Room";
     room = "Seminar Room";
+    event.preventDefault();
   });
   $(document).on('click', '#room2',function(){
     document.getElementById("roomButton").innerHTML = "Twosome Place";
     room = "Twosome Place";
+    event.preventDefault();
   });
   $(document).on('click', '#room3',function(){
     document.getElementById("roomButton").innerHTML = "RCV Lab";
     room = "RCV Lab";
+    event.preventDefault();
   });
   $(document).on('click', '#room4',function(){
     document.getElementById("roomButton").innerHTML = "Exercise Room";
     room = "Exercise Room";
+    event.preventDefault();
   });
 
   var config = {
