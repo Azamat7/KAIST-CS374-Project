@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  $(document).on('click', '#building',function(){
+    console.log("YAY");
+    document.getElementById("buildingButton").value = "N1";
+  });
+
   var config = {
     apiKey: "AIzaSyBxBVhON3OJ5cMx8rFzit8NWhokUpzCqjs",
     authDomain: "mappingtheworld0.firebaseapp.com",
