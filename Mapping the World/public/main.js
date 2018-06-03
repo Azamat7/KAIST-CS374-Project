@@ -3,11 +3,11 @@ $(document).ready(function(){
   localStorage.back = "default";
 
   $(document).on('click', '#amenities',function(){
-    window.alert("PLease enter a building name");
+    window.alert("Please enter a building name");
   });
 
   $(document).on('click', '#events',function(){
-    window.alert("PLease enter a building name");
+    window.alert("Please enter a building name");
   });
 
   //seach building button

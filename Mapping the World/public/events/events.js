@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  localStorage.back = "evetns";
+  localStorage.back = "events";
   var config = {
     apiKey: "AIzaSyBxBVhON3OJ5cMx8rFzit8NWhokUpzCqjs",
     authDomain: "mappingtheworld0.firebaseapp.com",
