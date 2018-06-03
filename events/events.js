@@ -20,7 +20,7 @@ $(document).ready(function(){
         '<small class = "mb-4"> By: ' + eventObject["organizer"] + '</small>' +
         '<p class = "mt-2">' + eventObject["description"] + '</p>' +
         '<div class = "thisone d-flex justify-content-between">' +
-          '<span>' + eventObject["time"] + '</span> <span>' + eventObject["location"] + ' </span> ' +
+          '<span style="font-size:17px">' + 'Time: ' + eventObject["time"] + '</span> <span style="font-size:17px">' + 'Place: ' + eventObject["location"] + ' </span> ' +
         '</div>' + 
         '<a class = "button mt-3 btn btn-outline-info" href="../map/map.html" style = "font-size: 12px;"> Find in Map </a>'
       '</div>';
@@ -30,7 +30,7 @@ $(document).ready(function(){
   
   $(document).on('click', '.button',function(){
       var crap = $(this).parent().children(".thisone").html();
-      localStorage.place = crap.split(" <span>")[1].split(" <")[0].split("N1 ")[1];
+      localStorage.place = crap.split(" <span")[1].split(" <")[0].split("N1 ")[1];
   }); 
 
   $(document).on('click', '#inlineCheckbox1',function(){
