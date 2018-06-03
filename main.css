@@ -35,7 +35,7 @@
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   z-index: 10;
-  /*margin-top: 1em;*/
+  margin-top: 4em;
   font-size:1.8vh;
 }
 
