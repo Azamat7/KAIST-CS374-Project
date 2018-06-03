@@ -20,7 +20,12 @@ $(document).ready(function(){
   	'<img src='+'"'+map+'.png'+'"'+'style="width:100%;">';  
   	$("#list-group-append").append(html);
   	//<img src="twosome.png" style="width:100%;">
-  }  
+  }
+  else{
+    let html = 
+    '<img src='+'"'+'default'+'.png'+'"'+'style="width:100%;">';  
+    $("#list-group-append").append(html);
+  }
 
   if (back=="amenities"){
   	document.getElementById("back").href = '../amenities/amenities.html';
@@ -28,6 +33,10 @@ $(document).ready(function(){
   	document.getElementById("back").href = '../location/coffee.html';
   }else if (back=="events"){
   	document.getElementById("back").href = '../events/events.html';
+  }
+  else
+  {
+    document.getElementById("back").href = '../index.html';
   }
 
   $(document).on('click', '#home',function(){
