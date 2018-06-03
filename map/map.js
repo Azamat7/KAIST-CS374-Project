@@ -1,16 +1,27 @@
 $(document).ready(function(){
   var back = localStorage.back;
   var map = localStorage.map;
+
+  if(back=="events")
+  {
+    var place = localStorage.place;
+    map = place;
+  }
+
   var description = "";
   var check = 0
-  if (map=="twosome"){
+  if (map=="twosome" || map=="Twosome Place"){
   	description = "Twosome Place";
-  }else if (map=="exercise"){
+    map="twosome";
+  }else if (map=="exercise" || map=="Exercise Room"){
   	description = "Exercise Room";
-  }else if (map=="rcv"){
+    map="exercise";
+  }else if (map=="rcv" || map=="RCV Lab"){
   	description = "Robotics and Computer Vision Lab";
-  }else if (map=="seminar"){
+    map="rcv";
+  }else if (map=="seminar" || map=="Seminar Room"){
   	description = "Seminar Room";
+    map="seminar";
   }else{
   	check = 1
   }
@@ -19,7 +30,7 @@ $(document).ready(function(){
   	'<p style="padding-left: 15px;"> To get to <strong>'+description+'</strong> follow the arrow</p>'+
   	'<img src='+'"'+map+'.png'+'"'+'style="width:100%;">';  
   	$("#list-group-append").append(html);
-  	//<img src="twosome.png" style="width:100%;">
+  	// <img src="twosome.png" style="width:100%;">
   }
   else{
     let html = 
