@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   localStorage.back = "events";
   var config = {
     apiKey: "AIzaSyBxBVhON3OJ5cMx8rFzit8NWhokUpzCqjs",
@@ -11,7 +12,6 @@ $(document).ready(function(){
   database.ref("user-created-events/").once("value").then(function(snapshot){
     let dbSnapshot = snapshot.val();
     let keyVal = Object.keys(dbSnapshot);
-    console.log(keyVal);
     for ( var i = 0; i < keyVal.length; i++) {
       let eventObject = dbSnapshot[keyVal[i]];
       let html = 
@@ -22,11 +22,12 @@ $(document).ready(function(){
         '<div class = "d-flex justify-content-between">' +
           '<span>' + eventObject["time"] + '</span> <span>' + eventObject["location"] + ' </span> ' +
         '</div>' + 
-        '<a class = "mt-3 btn btn-outline-info" href = "../map/map.html" style = "font-size: 12px;"> Find in Map </a>'
+        '<a class = "mt-3 btn btn-outline-info" href="../map/map.html" style = "font-size: 12px;"> Find in Map </a>'
       '</div>';
       $("#list-group-append").append(html);
     }
   });
+  
   $(document).on('click', '#inlineCheckbox1',function(){
     $(".list-group-item").each(function(){
       if ($(this).hasClass("#Study")) {
