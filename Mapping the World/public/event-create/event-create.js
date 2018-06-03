@@ -45,5 +45,11 @@ $(document).ready(function() {
     // After 3 seconds, remove the show class from DIV
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
   }
+
+  $(document).on('click', '#home',function(){
+    if (confirm("Are you sure you want to exit current building?")) {
+      document.getElementById("home").href = '../index.html';
+    }
+  });
   
 });

@@ -16,11 +16,14 @@
         .jumbotron {background-color: white;} 
         .navbar {font-size: 12px;}
     </style>
+    <script src = "./amenities.js"></script>
 </head>
 <body>
   <nav class = "navbar navbar-expand sticky-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="../index.html">Navbar</a>
     <ul class="navbar-nav  mr-auto">
+      <li class = "nav-item ">
+        <a class="nav-link" href="#" id="home"><i class="fas fa-home"  style = "font-size: 20px;"></i></a>
+      </li>
       <li class="nav-item active">
         <a class="nav-link" href="../amenities/amenities.html">Amenities</a>
       </li>
@@ -30,10 +33,8 @@
       <li class="nav-item">
         <a class="nav-link" href="../event-create/event-create.html">Create Events</a>
       </li>
-    </ul>
-    <ul class = "navbar-nav">
-      <li class = "nav-item active">
-          <a class="nav-link" href="../map/map.html"><i class ="far fa-map" style = "font-size: 18px;"></i></a>
+      <li class = "nav-item">
+        <a class="nav-link" href="../map/map.html">MAP</a>
       </li>
     </ul>
   </nav>
@@ -42,7 +43,7 @@
         Where are you headed?
     </h3>
     <div class = "input-group col-10 offset-1 mb-5 px-0">
-      <input class = "form-control" type="text" placeholder="Current Building(i.e N1 Building, E3-2 building)" id="searchBuilding">
+      <input class = "form-control" type="text" placeholder="Destination(i.e Seminar, Professor)" id="searchBuilding">
       <div class = "input-group-append">
         <button class="btn btn-primary" type="submit" id=searchBuildingButton><i class="fa fa-search"></i></button>
       </div>  

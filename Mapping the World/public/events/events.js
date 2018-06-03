@@ -10,6 +10,7 @@ $(document).ready(function(){
   database.ref("user-created-events/").once("value").then(function(snapshot){
     let dbSnapshot = snapshot.val();
     let keyVal = Object.keys(dbSnapshot);
+    console.log(keyVal);
     for ( var i = 0; i < keyVal.length; i++) {
       let eventObject = dbSnapshot[keyVal[i]];
       let html = 
@@ -57,4 +58,13 @@ $(document).ready(function(){
       $(this).show();
 		});
   }); 
+  $(document).ready(function(){
+    $(document).on('click', '#home',function(){
+      console.log("YAY");
+      if (confirm("Are you sure you want to exit current building?")) {
+        document.getElementById("home").href = '../index.html';
+      }
+    });
+  });
+  
 });
