@@ -24,9 +24,9 @@
   display: none;
 
   border: 6px solid #17a2b8; 
-  padding: 2em;
-  width: 20em;
-  height: 42em;
+  padding: 20px;
+  width: 25em;
+  height: 630px;
   text-align: center;
   background: #fff;
   position: fixed;
@@ -35,7 +35,7 @@
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   z-index: 10;
-  margin-top: 2em;
+  /*margin-top: 1em;*/
 }
 
 
