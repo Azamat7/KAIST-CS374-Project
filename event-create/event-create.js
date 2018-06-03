@@ -1,7 +1,26 @@
 $(document).ready(function() {
+  var building = "";
+  var room = "";
   $(document).on('click', '#building',function(){
-    console.log("YAY");
-    document.getElementById("buildingButton").value = "N1";
+    document.getElementById("buildingButton").innerHTML = "N1";
+    building = "N1";
+  });
+
+  $(document).on('click', '#room1',function(){
+    document.getElementById("roomButton").innerHTML = "Seminar Room";
+    room = "Seminar Room";
+  });
+  $(document).on('click', '#room2',function(){
+    document.getElementById("roomButton").innerHTML = "Twosome Place";
+    room = "Twosome Place";
+  });
+  $(document).on('click', '#room3',function(){
+    document.getElementById("roomButton").innerHTML = "RCV Lab";
+    room = "RCV Lab";
+  });
+  $(document).on('click', '#room4',function(){
+    document.getElementById("roomButton").innerHTML = "Exercise Room";
+    room = "Exercise Room";
   });
 
   var config = {
@@ -18,10 +37,9 @@ $(document).ready(function() {
     let organizer = $("#organizer").val();
     let title = $("#title").val();
     let description = $("#description").val();
-    let time1 = $("#time").val();
-    let location = $("#location").val();   
+    let time1 = $("#time").val(); 
     let type = $("input[name=inlineRadioOptions]:checked").val();
-    if (location == "" || time1 == "" || description == "" || title == "" | organizer == "") {
+    if (building == "" || room=="" || time1 == "" || description == "" || title == "" | organizer == "") {
       return;
     }
     firebase.database().ref('user-created-events/' + dateOfUpload).set({
@@ -29,14 +47,15 @@ $(document).ready(function() {
       title: title,
       description: description, 
       time: time1,
-      location: location,
+      location: building+" "+room,
       type: type,
     });
      $("#organizer").val("");
      $("#title").val("");
      $("#description").val("");
     $("#time").val("");
-    $("#location").val("");   
+    var building = "";
+    var room = "";
     $("input[name=inlineRadioOptions]:checked").val("");
     showSnackbar();
   });
