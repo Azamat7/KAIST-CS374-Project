@@ -18,6 +18,13 @@ $(document).ready(function(){
     }
   }
 
+  document.getElementById("searchBuildingButton1").onclick = function() {
+    // var inputBuidling = $('#searchBuilding').val().toLowerCase();
+    // if (inputBuidling == "n1"){
+      window.open("./amenities/amenities.html","_self");
+    // }
+  }
+
   $(function() {
     $('#help').click(function() {
       $('#contactForm').fadeToggle();
