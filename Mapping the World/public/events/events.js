@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  localStorage.back = "evetns";
   var config = {
     apiKey: "AIzaSyBxBVhON3OJ5cMx8rFzit8NWhokUpzCqjs",
     authDomain: "mappingtheworld0.firebaseapp.com",
@@ -21,7 +22,7 @@ $(document).ready(function(){
         '<div class = "d-flex justify-content-between">' +
           '<span>' + eventObject["time"] + '</span> <span>' + eventObject["location"] + ' </span> ' +
         '</div>' + 
-        '<a class = "mt-3 btn btn-outline-info" href = "../map/map1.html" style = "font-size: 12px;"> Find in Map </a>'
+        '<a class = "mt-3 btn btn-outline-info" href = "../map/map.html" style = "font-size: 12px;"> Find in Map </a>'
       '</div>';
       $("#list-group-append").append(html);
     }
@@ -60,7 +61,6 @@ $(document).ready(function(){
   }); 
   $(document).ready(function(){
     $(document).on('click', '#home',function(){
-      console.log("YAY");
       if (confirm("Are you sure you want to exit current building?")) {
         document.getElementById("home").href = '../index.html';
       }

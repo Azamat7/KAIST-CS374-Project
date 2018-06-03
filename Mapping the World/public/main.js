@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  $("#contactForm").fadeOut();
+  localStorage.map = "default";
+  localStorage.back = "default";
 
   $(document).on('click', '#amenities',function(){
     window.alert("PLease enter a building name");
@@ -11,16 +12,10 @@ $(document).ready(function(){
 
   //seach building button
   document.getElementById("searchBuildingButton").onclick = function() {
-    var inputBuidling = $('#searchBuilding').val();
-    if (inputBuidling == "N1"){
+    var inputBuidling = $('#searchBuilding').val().toLowerCase();
+    if (inputBuidling == "n1"){
       window.open("./amenities/amenities.html","_self");
     }
-  }
-
-  //help button
-  document.getElementById("help").onclick = function() {
-    //window.alert("Ur dumb!");
-    
   }
 
   $(function() {
