@@ -30,7 +30,36 @@ $(document).ready(function(){
   	'<p style="padding-left: 15px;"> To get to <strong>'+description+'</strong> follow the arrow</p>'+
   	'<img src='+'"'+map+'.png'+'"'+'style="width:100%;">';  
   	$("#list-group-append").append(html);
-  	// <img src="twosome.png" style="width:100%;">
+  	if (map=="seminar"){
+      let html = 
+    '<img src="./seminar/img1.JPG" style="width:100%;">'+
+    '<img src="./seminar/img2.JPG" style="width:100%;">'+
+    '<img src="./seminar/img3.JPG" style="width:100%;">'+
+    '<img src="./seminar/img4.JPG" style="width:100%;">';  
+    $("#list-group-append").append(html);
+    }else if (map=="twosome"){
+      let html = 
+    '<img src="./twosome/img1.JPG" style="width:100%;">'+
+    '<img src="./twosome/img2.JPG" style="width:100%;">'+
+    '<img src="./twosome/img3.JPG" style="width:100%;">'+
+    '<img src="./twosome/img4.JPG" style="width:100%;">'+
+    '<img src="./twosome/img5.JPG" style="width:100%;">'+
+    '<img src="./twosome/img6.JPG" style="width:100%;">'+
+    '<img src="./twosome/img7.JPG" style="width:100%;">'+
+    '<img src="./twosome/img8.JPG" style="width:100%;">';  
+    $("#list-group-append").append(html);
+    }else if (map=="rcv"){
+      let html = 
+    '<img src="./rcv/img1.JPG" style="width:100%;">'+
+    '<img src="./rcv/img2.JPG" style="width:100%;">'+
+    '<img src="./rcv/img3.JPG" style="width:100%;">'+
+    '<img src="./rcv/img4.JPG" style="width:100%;">'+
+    '<img src="./rcv/img5.JPG" style="width:100%;">'+
+    '<img src="./rcv/img6.JPG" style="width:100%;">'+
+    '<img src="./rcv/img7.JPG" style="width:100%;">'+
+    '<img src="./rcv/img8.JPG" style="width:100%;">';  
+    $("#list-group-append").append(html);
+    }
   }
   else{
     let html = 
